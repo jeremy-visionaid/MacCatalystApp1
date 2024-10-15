@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0-maccatalyst</TargetFramework>
+    <TargetFramework>net8.0-ios</TargetFramework>
     <!-- The default runtime is maccatalyst-x64, except in Release config, in which case the default is maccatalyst-x64;maccatalyst-arm64.
          When specifying both architectures, use the plural <RuntimeIdentifiers> instead of the singular <RuntimeIdentifer>.
          The App Store will NOT accept apps with ONLY maccatalyst-arm64 indicated;
@@ -11,6 +11,10 @@
     <ImplicitUsings>true</ImplicitUsings>
     <SupportedOSPlatformVersion>14.2</SupportedOSPlatformVersion>
   </PropertyGroup>
+
+  <!--<ItemGroup>
+    <Metal Include="**\*.metal" />
+  </ItemGroup>-->
 
   <!-- Notes about the values set below:
     1. For macOS it's possible to sign both the app bundle (EnableCodesigning=true) and the package (*.pkg) (EnablePackageSigning=true),
